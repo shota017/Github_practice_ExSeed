@@ -1,0 +1,31 @@
+class Student:
+    def __init__(self, name, english_score, math_score):
+        self.name = name
+        self.english_score = english_score
+        self.math_score = math_score
+
+    def get_name(self):
+        return self.name
+
+    def get_english_score(self):
+        return self.english_score
+
+    def get_math_score(self):
+        return self.math_score
+
+    def set_name(self, name):
+        self.name = name
+
+    def set_english_score(self, english_score):
+        self.english_score = english_score
+
+    def set_math_score(self, math_score):
+        self.math_score = math_score
+
+    def __str__(self):
+        return f"Student Name: {self.name}, English Score: {self.english_score}, Math Score: {self.math_score}"
+
+    def display_scores_and_average(self):
+        print(f"English Score: {self.english_score}, Math Score: {self.math_score}")
+        average_score = (self.english_score + self.math_score) / 2
+        print(f"Average Score: {average_score}")
